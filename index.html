@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerMate AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>CareerMate AI</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#tools">Career Tools</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+            <h2>Build Your Career With AI 🚀</h2>
+
+            <p>
+                Discover career paths, analyze your skills,
+                improve your resume, and prepare for your dream job.
+            </p>
+
+            <button id="startButton">Explore Career Tools</button>
+        </section>
+
+
+        <!-- Career Tools -->
+        <section id="tools" class="tools">
+
+            <h2>Career Tools</h2>
+
+            <div class="tool-container">
+
+                <div class="tool-card">
+                    <div class="icon">🎯</div>
+                    <h3>Career Path Finder</h3>
+                    <p>
+                        Find career paths that match your skills and interests.
+                    </p>
+                    <button onclick="careerPathFinder()">Explore</button>
+                </div>
+
+
+                <div class="tool-card">
+                    <div class="icon">📊</div>
+                    <h3>Skill Gap Analyzer</h3>
+                    <p>
+                        Identify the skills you need for your target career.
+                    </p>
+                    <button onclick="skillGapAnalyzer()">Analyze</button>
+                </div>
+
+
+                <div class="tool-card">
+                    <div class="icon">📄</div>
+                    <h3>Resume Analyzer</h3>
+                    <p>
+                        Get insights to improve your resume for job applications.
+                    </p>
+                    <button onclick="resumeAnalyzer()">Analyze Resume</button>
+                </div>
+
+
+                <div class="tool-card">
+                    <div class="icon">🤖</div>
+                    <h3>AI Career Assistant</h3>
+                    <p>
+                        Ask questions and get AI-powered career guidance.
+                    </p>
+                    <button onclick="openCareerChat()">Chat with AI</button>
+                </div>
+
+
+                <div class="tool-card">
+                    <div class="icon">🎤</div>
+                    <h3>Interview Preparation</h3>
+                    <p>
+                        Practice interview questions and improve your confidence.
+                    </p>
+                    <button onclick="interviewPreparation()">Practice</button>
+                </div>
+
+
+                <div class="tool-card">
+                    <div class="icon">💼</div>
+                    <h3>Job Recommendations</h3>
+                    <p>
+                        Discover job opportunities based on your skills.
+                    </p>
+                    <button onclick="jobRecommendations()">Find Jobs</button>
+                </div>
+
+            </div>
+
+        </section>
+	
+
+
+        </section>
+</section>
+
+</section>
+
+<!-- AI Chat Box -->
+<div id="aiChatBox" class="ai-chat-box">
+
+    <div class="chat-header">
+        🤖 CareerMate AI
+        <button onclick="closeAIChat()">X</button>
+    </div>
+
+    <div id="chatMessages" class="chat-messages">
+        <div class="bot-message">
+            Hi! 👋 I'm CareerMate AI.<br>
+            Ask me about careers, skills, projects, or placements!
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input
+            type="text"
+            id="chatInput"
+            placeholder="Ask your career question..."
+        >
+        <button onclick="sendChatMessage()">Send</button>
+    </div>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+ 
+</body>
+</html>
